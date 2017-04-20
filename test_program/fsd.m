@@ -1,0 +1,9 @@
+I=imread('./test/frame200.png');
+[x,y]=size(I);
+X=y:-1:1;
+Y=x:-1:1;
+[xx,yy]=meshgrid(X,Y);
+i=im2double(I);
+figure;mesh(yy,xx,i);
+colorbar
+figure;imshow(i)
